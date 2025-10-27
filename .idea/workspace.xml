@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e49b748-e96e-4f42-a5c1-54b8fd59987d" name="Changes" comment="">
+    <list default="true" id="3e49b748-e96e-4f42-a5c1-54b8fd59987d" name="Changes" comment="(">
+      <change afterPath="$PROJECT_DIR$/docs/2.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/1.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/1.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +24,11 @@
         <option value="Python Script" />
         <option value="UML Use Case" />
         <option value="UML Sequence" />
-        <option value="UML Class" />
         <option value="UML Object" />
         <option value="UML Deployment" />
         <option value="EBNF" />
+        <option value="UML Class" />
+        <option value="UML Activity" />
       </list>
     </option>
   </component>
@@ -58,22 +63,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;EBNF&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/riaza/IdeaProjects/oteli/docs&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Activity",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/riaza/IdeaProjects/oteli/docs",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\riaza\IdeaProjects\oteli\docs" />
@@ -138,12 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1760264831602</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="(">
+      <option name="closed" value="true" />
+      <created>1760369812275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760369812276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="(" />
+    <option name="LAST_COMMIT_MESSAGE" value="(" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
