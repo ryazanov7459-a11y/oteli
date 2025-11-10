@@ -1,0 +1,40 @@
+[
+  {
+    "booking_id": 1,
+    "room_id": 1,
+    "client_id": 1,
+    "start_date": "2025-10-26",
+    "end_date": "2025-11-11",
+    "Room": {
+      "room_id": 1,
+      "room_number": "101",
+      "price_per_day": 3500.0,
+      "status": "свободен"
+    },
+    "Client": {
+      "client_id": 1,
+      "name": "Иван Иванов",
+      "phone": "+78005553535",
+      "email": "ivan@email.com"
+    }
+  },
+  {
+    "booking_id": 2,
+    "room_id": 2,
+    "client_id": 2,
+    "start_date": "2025-10-25",
+    "end_date": "2025-11-10",
+    "Room": {
+      "room_id": 2,
+      "room_number": "102",
+      "price_per_day": 4000.0,
+      "status": "занят"
+    },
+    "Client": {
+      "client_id": 2,
+      "name": "Анна Некая",
+      "phone": "+79999999999",
+      "email": "anna@gmail.com"
+    }
+  }
+]
