@@ -5,14 +5,12 @@ import os
 DB_FILE = "hotel.db"
 
 def main():
-    # Если базы нет, создаем таблицы и вставляем тестовые данные
     if not os.path.exists(DB_FILE):
         create_tables(DB_FILE)
         insert_sample_data(DB_FILE)
 
     repo = Repository(DB_FILE)
 
-    # --- Основной цикл программы ---
     while True:
         print("\n=== Система управления отелем ===")
         print("1 - Показать все комнаты")
@@ -45,7 +43,6 @@ def main():
         elif choice == "4":
             print("\nСоздание нового бронирования:")
 
-            # Показываем свободные комнаты
             available_rooms = repo.get_available_rooms()
             if not available_rooms:
                 print("Нет свободных комнат для бронирования")

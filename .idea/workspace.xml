@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e49b748-e96e-4f42-a5c1-54b8fd59987d" name="Changes" comment=")">
-      <change afterPath="$PROJECT_DIR$/docs/ER.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/ER.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/бронирование номера.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/добавление номера.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/1.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/use-case.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/2.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/добавление  номера.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/3.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/бронирование номера.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/use-case.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img_2.png" beforeDir="false" />
-    </list>
+    <list default="true" id="3e49b748-e96e-4f42-a5c1-54b8fd59987d" name="Changes" comment="экспорт датабазы в форматы" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +29,11 @@
       <list>
         <option value="ryazanov7459-a11y &lt;ryazanov7459@gmail.com&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -77,26 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.1.executor": "Run",
-    "Python.db.executor": "Run",
-    "Python.hotel_db.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.models.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/riaza/IdeaProjects/oteli/docs",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.export_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hotel_db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/riaza/IdeaProjects/oteli/docs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\riaza\IdeaProjects\oteli\docs" />
@@ -178,24 +165,40 @@
       <option name="project" value="LOCAL" />
       <updated>1761475603977</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="добавил датабазы и переименовал диаграммы">
+      <option name="closed" value="true" />
+      <created>1762684819826</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762684819826</updated>
+    </task>
+    <task id="LOCAL-00008" summary="экспорт датабазы в форматы">
+      <option name="closed" value="true" />
+      <created>1762789600771</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762789600771</updated>
+    </task>
+    <task id="LOCAL-00009" summary="экспорт датабазы в форматы">
+      <option name="closed" value="true" />
+      <created>1762789734289</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762789734289</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
     <MESSAGE value="(" />
     <MESSAGE value=")" />
-    <option name="LAST_COMMIT_MESSAGE" value=")" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="добавил датабазы и переименовал диаграммы" />
+    <MESSAGE value="экспорт датабазы в форматы" />
+    <option name="LAST_COMMIT_MESSAGE" value="экспорт датабазы в форматы" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

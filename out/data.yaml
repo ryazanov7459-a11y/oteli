@@ -1,0 +1,30 @@
+- Client:
+    client_id: 1
+    email: ivan@email.com
+    name: Иван Иванов
+    phone: '+78005553535'
+  Room:
+    price_per_day: 3500.0
+    room_id: 1
+    room_number: '101'
+    status: свободен
+  booking_id: 1
+  client_id: 1
+  end_date: '2025-11-11'
+  room_id: 1
+  start_date: '2025-10-26'
+- Client:
+    client_id: 2
+    email: anna@gmail.com
+    name: Анна Некая
+    phone: '+79999999999'
+  Room:
+    price_per_day: 4000.0
+    room_id: 2
+    room_number: '102'
+    status: занят
+  booking_id: 2
+  client_id: 2
+  end_date: '2025-11-10'
+  room_id: 2
+  start_date: '2025-10-25'
