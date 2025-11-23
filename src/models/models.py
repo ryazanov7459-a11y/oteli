@@ -1,5 +1,19 @@
-# models/models.py
-
+class User:
+    """
+    Модель для таблицы User
+    Поля:
+    - user_id: уникальный идентификатор пользователя (PK)
+    - username: логин
+    - password: пароль
+    - role: роль
+    - client_id: клиент
+    """
+    def __init__(self, user_id, username, password, role, client_id=None):
+        self.user_id = user_id
+        self.username = username
+        self.password = password
+        self.role = role
+        self.client_id = client_id
 class Room:
     """
     Модель для таблицы Room
@@ -7,7 +21,7 @@ class Room:
     - room_id: уникальный идентификатор номера (PK)
     - room_number: номер комнаты
     - price_per_day: стоимость проживания за сутки
-    - status: статус номера (например, 'свободен' или 'занят')
+    - status: статус номера
     """
     def __init__(self, room_id, room_number, price_per_day, status):
         self.room_id = room_id

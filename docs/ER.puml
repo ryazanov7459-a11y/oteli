@@ -1,23 +1,35 @@
 @startuml
 entity "Room" as Room {
-id: INTEGER <<PK>>
-room_number: TEXT
-price_per_day : REAL
-status: TEXT
+  room_id: INTEGER <<PK>>
+  --
+  room_number: TEXT
+  price_per_day: REAL
+  status: TEXT
 }
 entity "Client" as Client {
-id: INTEGER <<PK>>
-name: TEXT
-phone: TEXT
-email: TEXT
+  client_id: INTEGER <<PK>>
+  --
+  name: TEXT
+  phone: TEXT
+  email: TEXT
+}
+entity "User" as User {
+  user_id: INTEGER <<PK>>
+  --
+  username: TEXT
+  password: TEXT
+  role: TEXT
+  client_id: INTEGER <<FK>>
 }
 entity "Booking" as Booking {
-id: INTEGER <<PK>>
-start_date: DATE
-end_date: DATE
-room_id: INTEGER <<FK>>
-client_id: INTEGER <<FK>>
+  booking_id: INTEGER <<PK>>
+  --
+  start_date: TEXT
+  end_date: TEXT
+  room_id: INTEGER <<FK>>
+  client_id: INTEGER <<FK>>
 }
-Room||--o{Booking:"1:N"
-Client||--o{Booking:"1:N"
+Room ||--o{ Booking
+Client ||--o{ Booking
+Client ||--o| User
 @enduml

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e49b748-e96e-4f42-a5c1-54b8fd59987d" name="Changes" comment="экспорт датабазы в форматы" />
+    <list default="true" id="3e49b748-e96e-4f42-a5c1-54b8fd59987d" name="Changes" comment="экспорт датабазы в форматы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ER.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ER.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/use-case.puml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/use-case.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hotel.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/repository.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,8 +198,27 @@
       <option name="project" value="LOCAL" />
       <updated>1762789734289</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="экспорт датабазы в форматы">
+      <option name="closed" value="true" />
+      <created>1762789797054</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762789797054</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />

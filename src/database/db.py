@@ -4,9 +4,22 @@ from sqlite3 import Connection
 
 def get_connection(db_name: str = "hotel.db") -> Connection:
     return sqlite3.connect(db_name)
+
 def create_tables(db_name: str = "hotel.db"):
     conn = get_connection(db_name)
     cursor = conn.cursor()
+
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS User (
+            user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT UNIQUE NOT NULL,
+            password TEXT NOT NULL,
+            role TEXT NOT NULL CHECK(role IN ('receptionist', 'client')),
+            client_id INTEGER,
+            FOREIGN KEY (client_id) REFERENCES Client(client_id)
+        )
+    ''')
+
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS Room (
             room_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -36,14 +49,29 @@ def create_tables(db_name: str = "hotel.db"):
     ''')
     conn.commit()
     conn.close()
+
 def insert_sample_data(db_name: str = "hotel.db"):
     conn = get_connection(db_name)
     cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(*) FROM User")
+    if cursor.fetchone()[0] == 0:
+        users = [
+            ("admin", "admin123", "receptionist", None),
+            ("client1", "client123", "client", 1),
+            ("client2", "client123", "client", 2),
+            ("client3", "client123", "client", 3)
+        ]
+        cursor.executemany(
+            "INSERT INTO User (username, password, role, client_id) VALUES (?, ?, ?, ?)",
+            users
+        )
+
     cursor.execute("SELECT COUNT(*) FROM Room")
     if cursor.fetchone()[0] == 0:
         rooms = [
             ("101", 3500.0, "свободен"),
-            ("102", 4000.0, "занят"),
+            ("102", 4000.0, "свободен"),
             ("103", 4500.0, "свободен"),
             ("104", 5000.0, "свободен"),
         ]
@@ -51,6 +79,7 @@ def insert_sample_data(db_name: str = "hotel.db"):
             "INSERT INTO Room (room_number, price_per_day, status) VALUES (?, ?, ?)",
             rooms
         )
+
     cursor.execute("SELECT COUNT(*) FROM Client")
     if cursor.fetchone()[0] == 0:
         clients = [
@@ -62,6 +91,7 @@ def insert_sample_data(db_name: str = "hotel.db"):
             "INSERT INTO Client (name, phone, email) VALUES (?, ?, ?)",
             clients
         )
+
     cursor.execute("SELECT COUNT(*) FROM Booking")
     if cursor.fetchone()[0] == 0:
         bookings = [
