@@ -1,19 +1,35 @@
 @startuml
-package "система" {
-usecase "Просмотреть доступные номера"
-usecase "Оформить бронирование"
-usecase "Отменить бронирование"
-usecase "Добавить номер"
-usecase "Редактировать номер"
-usecase "Удалить номер"
-usecase "Забронировать номер"
+left to right direction
+
+actor "Портье" as receptionist
+actor "Клиент" as client
+
+rectangle "Система управления отелем" {
+  usecase "Просмотреть доступные номера" as view_rooms
+  usecase "Оформить бронирование" as create_booking
+  usecase "Отменить бронирование" as cancel_booking
+  usecase "Добавить номер" as add_room
+  usecase "Редактировать номер" as edit_room
+  usecase "Удалить номер" as delete_room
+  usecase "Забронировать номер" as book_room
+  usecase "Просмотреть свои бронирования" as view_my_bookings
+  usecase "Вход" as login
+  usecase "Регистрация" as register
 }
-портье -> (Просмотреть доступные номера)
-клиент -> (Просмотреть доступные номера)
-портье -> (Оформить бронирование)
-портье -> (Отменить бронирование)
-портье -> (Добавить номер)
-портье -> (Редактировать номер)
-портье -> (Удалить номер)
-клиент -> (Забронировать номер)
+
+receptionist --> view_rooms
+receptionist --> create_booking
+receptionist --> cancel_booking
+receptionist --> add_room
+receptionist --> edit_room
+receptionist --> delete_room
+client --> view_rooms
+client --> book_room
+client --> view_my_bookings
+client --> login
+client --> register
+
+view_rooms <|-- book_room
+login <|-- create_booking
+login <|-- book_room
 @enduml
